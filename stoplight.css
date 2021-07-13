@@ -10,6 +10,7 @@
   width: 200px;
   height: 200px;
   /* center align each light and add a margin bottom */
+  margin: auto;
   margin-bottom: 10px;
   border: 5px solid black;
   /*   make the lights a circle */
