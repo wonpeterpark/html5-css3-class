@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>CSS corners and shadows</title>
+       <style>
+           .corner-demo-box {
+               width: 100px;
+               height: 100px;
+               padding: 30px;
+               margin: 30px;
+               color: white;
+               text-align: center;
+               background-color: blue;
+           }
+
+           .simple-rounded {
+               border-radius: 8px;
+           }
+
+           .top-right-bottom-left-rounded {
+               border-top-right-radius: 10px;
+               border-bottom-left-radius: 10px;
+           }
+
+           .circle {
+               border-radius: 50%;
+           }
+
+           .shadow { /* */
+               box-shadow: 5px 5px 15px 5px #000000;
+           }
+
+           .inner-shadow { /* */
+               box-shadow: 5px 5px 15px 5px #000000 inset;
+           }
+
+           .text-shadow {
+               text-shadow: 10px 10px 5px #000000;
+           }
+       </style>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+       <div class="corner-demo-box simple-rounded">Rounder corners</div>
+       <div class="corner-demo-box top-right-bottom-left-rounded">top-right-bottom-left-rounded</div>
+       <div class="corner-demo-box circle">Circle</div>
+       <div class="corner-demo-box shadow">Shadow corners</div>
+       <div class="corner-demo-box inner-shadow">Inner shadow</div>
+       <div class="corner-demo-box text-shadow">Text shadow</div>
+   </body>
+</html>

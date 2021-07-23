@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>CSS position</title>
+       <style>
+           * { /*check */
+               box-sizing: border-box;
+           }
+           .parent-box {
+               position: relative;
+               /* position: absolute; */
+               width:100%;
+               height: 3000px;
+               padding: 30px;
+               background: blue;
+           }
+
+           .parent-box > h1 {
+               color: white;
+           }
+
+           .child-box {
+            /*   width: 100%;
+               height: auto; */
+               padding: 30%
+           }
+
+           .background-red {
+               background-color: red;
+           }
+           .background-yellow {
+               background-color: yellow;
+           }
+           .background-green {
+               background-color: green;
+           }
+
+           .child-one {
+             /*  position: relative; we can move it around */
+              position: sticky;
+              top: 0px;
+
+
+           }
+       </style>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="parent parent-box">
+          <h1>Parent</h1>
+          <div class="child-one child-box background-red">ONE</div>
+          <div class="child-two child-box background-yellow">TWO</div>
+          <div class="child-three child-box background-green">THREE</div>
+      </div>
+   </body>
+</html>
